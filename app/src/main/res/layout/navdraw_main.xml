@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:id="@+id/navLayout"
+        android:background="#ffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Locks"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="#5fceca"
+            android:id="@+id/textView6"
+             />
+
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:choiceMode="singleChoice"
+        android:divider="#4ca5a2"
+        android:dividerHeight="1dp"
+        android:background="#ffff"
+        android:listSelector="#5fceca"
+        android:visibility="visible"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewNoLocks"
+            android:layout_gravity="center_horizontal"
+            android:hint="No Locks to show"
+            android:visibility="gone"
+            android:layout_marginTop="200dp"/>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
